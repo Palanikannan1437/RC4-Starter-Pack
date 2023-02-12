@@ -1,0 +1,5 @@
+tasks:
+  - name: start app
+    init: pnpm i && pnpm run build
+    command: pnpm run dev
+    
