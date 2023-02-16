@@ -1,8 +1,5 @@
-import {
-  fetchTimelineData,
-  TimelineObjectType,
-} from "@palanikannan1437/rc4-core";
-import { Timeline, Card, Button } from "@palanikannan1437/rc4-ui";
+import { Card, Button } from "@palanikannan1437/rc4-ui";
+import { fetchTimelineData, Timeline, TimelineObjectType } from "@palanikannan1437/rc4community-timeline";
 
 const CARD_CONTENT = [
   {
