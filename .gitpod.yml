@@ -1,5 +1,29 @@
 tasks:
-  - name: start app
-    init: pnpm i && pnpm run build
+  - name: start nextjs app
+    init: pnpm i
     command: pnpm run dev
-    
+  - name: start strapi
+    before: cd cms
+    init: |
+      pnpm i
+    command: sh ../gitpod-scripts/startCloudDevStrapi.sh
+
+ports:
+  - port: 3000
+    onOpen: open-preview
+    name: RC4Community
+    description: Next.js app for RC4Community
+  - port: 1337
+    onOpen: notify
+    name: Strapi
+    description: Strapi Dashboard
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: true
+    addComment: true
+    addBadge: true
