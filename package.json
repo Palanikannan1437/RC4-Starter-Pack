@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@palanikannan1437/rc4-ui": "^0.0.7",
+    "@palanikannan1437/rc4community-navbar": "^2.0.0",
     "@palanikannan1437/rc4community-timeline": "^0.0.2",
-    "next": "^13.1.6",
+    "next": "^13.2.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "webpack": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
